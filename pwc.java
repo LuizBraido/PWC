@@ -4,7 +4,6 @@ public class pwc{
         Scanner sc = new Scanner(System.in);
         int cont = 0;
         boolean teste = true;
-        String rua = "";
         System.out.print("Informe o endereco: ");
         String frase = sc.nextLine();
         System.out.print("Rua: ");
@@ -12,7 +11,6 @@ public class pwc{
             char caracter = frase.charAt(cont);
             if((caracter == 32) || (caracter >= 65) && (caracter <= 90) || (caracter >= 97) && (caracter <= 122)){
                 System.out.print(frase.charAt(cont));
-                //rua = rua + caracter;
                 cont++;
             } else {
                 teste = false;
